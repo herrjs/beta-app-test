@@ -31,7 +31,7 @@ st.latex('''
 import numpy as np
 import pandas as pd
 st.write('Map below')
-map_data = pd.DataFrame(np.random.randn(800, 2) / [85, 85] + [7.062170, -73.854332],columns=['latitude', 'longitude'])
+map_data = pd.DataFrame(np.random.randn(1, 2) / [85, 85] + [7.062170, -73.854332],columns=['latitude', 'longitude'])
 
 st.map(map_data)
 
