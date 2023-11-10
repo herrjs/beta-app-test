@@ -1,2 +1,2 @@
 import strealit as st
-st write ('Hola mundo!')
+st.write ('Hola mundo!')
