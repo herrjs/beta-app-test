@@ -27,3 +27,13 @@ st.code(code, language='python')
 st.latex('''
 (a+b)^2 = a^2 + b^2 + 2*a*b
 ''')
+
+import numpy as np
+import pandas as pd
+st.write('Map below')
+map_data = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+
+st.map(map_data)
+
